@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function goToHell(){
+			var a=20,b=30;
+			console.log("before calling a function:"+a,b);
+			callByValue(a,b);
+			console.log("After calling the function a,b are:"+a,b);
+		}
+		function callByValue(newa,newb){
+			console.log("We are inside the function"+newa,newb);
+			newa=0,newb=0;
+			console.log("newa="+newa+" newb="+newb);
+		}
+	</script>
+</head>
+<body>
+	<h1>we are seeing call by value  & call by reference</h1>
+	<button onclick="goToHell()">Submit</button>
+</body>
+</html>

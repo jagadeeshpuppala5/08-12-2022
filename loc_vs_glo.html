@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var a=20;//global
+		console.log("outside the function"+a)
+		function func(){
+			var z=49;//local
+			console.log("Inside the function"+z);
+			console.log("Inside the function"+a);          
+		}
+		
+	</script>
+</head>
+<body>
+	<button onclick="func()">Click me</button>
+</body>
+</html>
